@@ -1,0 +1,625 @@
+body {
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  
+}
+.first-box {
+    
+    background-color: #00b4cc;
+    color: #fff;
+}
+.first-nav {
+  background-color: #00b4cc;
+}
+.navbar-nav a {
+  font-size: 14px;
+    color: #fff;
+}
+
+
+.navbar-nav a:hover  {
+  color:  #fff;
+}
+.navbar-nav  .active  a{
+  color: #f7b648;
+}
+
+.navbar .navbar-nav .nav-item {
+    position: relative;
+    
+}
+.navbar .navbar-nav .nav-item::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #f7b648;
+  width: 0%;
+  content: "";
+  height: 4px;
+  
+  transition: all 0.5s;
+}
+.navbar .navbar-nav .nav-item:hover::after {
+  width: 100%;
+  
+}
+.navbar .nav-item .dropdown-item {
+  color: #000;
+ 
+}
+.sunroom {
+  background-image: url(../img/Layer-1.jpg);
+  background-repeat: no-repeat ;
+  background-size: cover;
+  min-height: 300px;
+  text-align: center;
+  color: #f7b648;
+  font-weight: bold;
+  font-family: 'montserrat';
+  padding-top: 19px;
+  padding-bottom: 90px;
+  position: relative;
+  z-index: 1;
+  opacity: 0.5px;
+}
+.sunroom:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.9) url(../img/overlay-dots.png);
+  opacity: 0.5;
+  z-index: -1;
+}
+
+
+.web-studio {
+  color: #fff;
+  font-weight: normal;
+ 
+  text-align: left;
+ 
+}
+.sunroom-bordr {
+  position: relative;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.sunroom-bordr::after {
+  content:'';
+  position: absolute;
+  background-color: #f7b648;
+  width: 19%;
+  height: 3px;
+  bottom: -15px;
+  left: 50%;
+ 
+  
+  transform: translateX(-50%);
+}
+.project-recent{
+  color: #f7b648;
+  text-align: center;
+}
+.projec {
+  
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 30px; 
+}
+.projec::after {
+  content:'';
+  position: absolute;
+  background-color: #f7b648;
+  width: 15%;
+  height: 3px;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+ 
+}
+
+.image {
+  position: relative;
+ 
+}
+.image-img {
+  display: block;
+  
+}
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s;
+
+}
+.image-overlay:hover {
+ opacity: 1;
+}
+.image-title {
+  font-weight:lighter;
+  font-size: 40px;
+}
+.btn-custom {
+  border: 2px solid #f7b648;
+  color: #f7b648;
+  font-weight: bold; 
+}
+.btn-effect {
+  text-align: center; 
+}
+.btn-custom:hover {
+  color: #f7b648;
+}
+.layer-2 {
+  background-image: url(../img/paralax-photo.jpg); 
+}
+.layer-2:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.9) url(../img/overlay-dots.png);
+    z-index: 0;
+    opacity: 0.5;
+}
+.carousel-control-prev, .carousel-control-next {
+  width: 50px;
+  height: 40px;
+  background-color: #bbbbbb;
+  top: 50%;
+  opacity: .8;
+}
+.rou {
+  width: 163px;
+  height: 163px;
+  object-fit: cover;
+  object-position: top;
+  margin: auto;
+  display: block;
+}
+.girl-box {
+  padding-top: 155px;
+}
+.face-book {
+  border: 2px solid #f7b648;
+  border-radius: 20px;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  margin: 5px;
+  padding-top: 5px;
+  color: #f7b648;
+  border-width: 1px;
+}
+
+/*zoom effect on images*/
+
+.image {
+  position: relative;
+  overflow:hidden;
+}
+.image .image-img {
+  transition: transform 1s;
+  opacity: 1.6;
+}
+.image:hover .image-img {  
+  transform: scale(1.1);
+  opacity: 1;
+}
+.navbar-toggler {
+  color: #f7b648;
+  border: 2px solid #f7b648;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.seal-foot a{
+  color: #fff;
+  font-size: 14px;
+}
+.seal-foot{
+  background-color: #000;
+  font-size: 12px;
+}
+
+
+
+
+
+/*second page css*/
+section {
+  color: #000;
+  font-family: 'Open Sans', sans-serif;
+}
+.We-do {
+  background-color: #fff
+}
+.second-nav  a {
+  font-size: 14px;
+  color: #000;
+  font-weight:600;
+}
+.second-nav .nav-item {
+  position: relative;
+}
+.second-nav .nav-item::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #f7b648;
+  width: 0%;
+  content: "";
+  height: 4px;
+  transition: all 0.5s;
+}
+.second-nav .nav-item:hover::after {
+  width: 100%;
+}
+.second-nav a:visited,.second-nav a:hover, .second-nav a:focus {
+  color: #000;
+}
+    /*second image*/
+.mock-up {
+  background-image: url(../img/mockup_1.jpg);
+  background-size:cover;
+  background-repeat:no-repeat;
+  min-height: 400px;
+  width: 100%;
+  color: #fff;
+  margin-top: 87px;
+}
+.image-text {
+  font-size: 25px;
+  font-weight: 50;
+  text-align: left;
+  padding-top: 100px;
+  padding-left: 75px;
+
+}
+/*what we do container*/
+.second-web-studio {
+  color: #f7b648;
+  text-align: center;
+  position: relative;
+  margin-top: 30px;
+}
+.second-web-studio::after {
+  content:'';
+  position: absolute;
+  background-color: #f7b648;
+  width: 19%;
+  height: 3px;
+  bottom: -15px;
+  left: 41%;
+  
+}
+.web-p {
+  text-align: center;
+   font-size: 18px; 
+}
+
+/*can  do for you container*/
+
+.award {
+  background-color: #eceaeb ;
+ 
+}
+.award li {
+  list-style:square;
+}
+/*tourism website container*/
+.tourism-studio {
+  color: #f7b648;
+  text-align: center;
+  position: relative;
+  margin-top: 30px;
+  font-weight: 400;
+}
+.tourism-studio::after {
+  content:'';
+  position: absolute;
+  background-color: #f7b648;
+  width: 19%;
+  height: 3px;
+  bottom: -15px;
+  left: 41%;
+  
+}
+.image-second {
+  position: relative;
+ 
+}
+.image-img-second {
+  display: block;
+  
+}
+.image-overlay-second {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s;
+  color: #fff;
+
+}
+.image-overlay-second:hover {
+ opacity: 1;
+}
+.image-title-second {
+  font-weight:lighter;
+  font-size: 40px;
+}
+
+ /*zoom effect on images*/
+ .image-second {
+  position: relative;
+ overflow:hidden;
+}
+.image-second .image-img-second {
+  transition: transform 1s;
+  opacity: 1.6;
+}
+.image-second:hover .image-img-second {
+ transform: scale(1.1);
+ opacity: 1;
+}
+
+/*e-commerce*/
+.e-commerce {
+  background-color: #eceaeb;
+}
+
+/*let show*/
+.let-show {
+  background-color: #f7b648;
+  color: #fff;
+  text-align: center;
+  font-size: 39px;
+  font-weight:200;
+  
+}
+.let-btn {
+  border: 2px solid #fff;
+  color: #fff;
+  font-size: 14px;
+}
+.let-btn:hover {
+   color: #fff;
+}
+
+/*footer*/
+.second-seal-foot a  {
+  list-style: none;
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+}
+li{
+  list-style: none;
+}
+.second-seal-foot {
+  background-color: #000;
+  color: #fff;
+  font-size: 12px;
+}
+.second-face-book {
+  border: 2px solid #f7b648;
+  border-radius: 20px;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  margin: 5px;
+  padding-top: 5px;
+  color: #f7b648;
+  border-width: 1px;
+}
+
+
+
+/*third page-our-work-1*/
+.our-image  {
+  background-image: url(../img/background.png);
+  background-size:cover;
+  background-repeat:no-repeat;
+  min-height: 375px;
+  margin-top: 87px;
+  color: #fff;
+}
+.our-image:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom:30%;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.9) url(../img/blackshade.png);
+  z-index: -1;
+  
+}
+.first-our-work {
+  color: #f7b648;
+  text-align: center;
+  position: relative;
+  margin-top: 30px;
+}
+.first-our-work::after {
+  content:'';
+  position: absolute;
+  background-color: #f7b648;
+  width: 15%;
+  height: 3px;
+  bottom: -15px;
+  left: 43%;
+  
+}
+
+@media (max-width: 767px) {
+  .let-show {
+    font-size: 30px;
+  }
+}
+
+/*second our work */
+
+.our-image-second {
+  
+    background-image: url(../img/tamaki.png);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position: center;
+    min-height: 375px;
+    margin-top: 87px;
+    color: #fff;
+    
+}
+.tamaki {
+position: relative;
+
+}
+  .tamaki-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    font-size: 44px;
+    font-weight: 100;
+   
+
+    
+  }
+
+  /*laptop*/
+  .tamaki-lap {
+    background-color: #eceaeb;
+   
+  }
+  .work-dotshade {
+    background-image: url(../img/paralax-photo.jpg); 
+    background-size:cover;
+    background-repeat:no-repeat;
+    position: relative;
+    color: #fff;
+  }
+  .work-dotshade:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.9) url(../img/overlay-dots.png);
+    
+    z-index: 0;
+    opacity: 0.5;
+}
+
+.shade-text {
+  font-style: italic;
+  position: relative;
+}
+.dotshade-2 {
+  position: relative;
+}
+.img-grd {
+ padding-top: 32px;
+}
+
+
+/*about-us-page*/
+.our-image-2  {
+  background-image: url(../img/Mockup_4.jpg);
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position: center;
+  min-height: 210px;
+  margin-top: 87px;
+  color: #fff;
+  margin-bottom: 15px;
+ 
+}
+.image-text-mockup {
+  font-size: 25px;
+  font-weight: 50;
+  text-align: left;
+  padding-top: 45px;
+  padding-left: 75px;
+
+}
+.about-studio {
+  color: #f7b648;
+  text-align: center;
+  position: relative;
+  margin-top: 30px;
+}
+.about-studio::after {
+  content:'';
+  position: absolute;
+  background-color: #f7b648;
+  width: 17%;
+  height: 3px;
+  bottom: -15px;
+  left: 42%;
+  
+}
+.our-bg {
+  background-color: #eceaeb;
+}
+.boy {
+   object-fit:none;
+   object-position: top;
+   
+}
+.para p {
+  font-size: 16px;
+  padding-top: 10px;
+}
+
+
+/*contact page*/
+.our-image-3  {
+  background-image: url(../img/Mockup_3.jpg);
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position: center;
+  min-height: 351px;
+  margin-top: 87px;
+  color: #fff;
+}
+
+.form-label {
+  color: #f7b648;
+  font-weight: bold;
+  
+}
+.cont-act {
+  color: #000;
+}
+
